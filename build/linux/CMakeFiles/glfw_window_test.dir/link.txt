@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -O0 -g CMakeFiles/glfw_window_test.dir/src/main.cpp.o -o glfw_window_test  /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /usr/lib/x86_64-linux-gnu/libGL.so 

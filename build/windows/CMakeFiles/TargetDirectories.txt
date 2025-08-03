@@ -1,0 +1,3 @@
+/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/windows/CMakeFiles/glfw_window_test.dir
+/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/windows/CMakeFiles/edit_cache.dir
+/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/windows/CMakeFiles/rebuild_cache.dir

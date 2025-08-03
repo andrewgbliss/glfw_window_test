@@ -3,10 +3,33 @@ message(STATUS "Building glfw_window_test")
 cmake_minimum_required(VERSION 3.10)
 project(GlfwWindowTest)
 
+# Enable parallel builds
+include(ProcessorCount)
+ProcessorCount(N)
+if(NOT N EQUAL 0)
+    set(CMAKE_BUILD_PARALLEL_LEVEL ${N})
+endif()
+
+# Set build type for faster debug builds
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+# Optimize for faster compilation
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0 -g")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
+
 include_directories(include)
 include_directories(${PROJECT_SOURCE_DIR}/external/glfw/include)
 
 add_executable(glfw_window_test src/main.cpp)
+
+# Enable precompiled headers for faster compilation
+target_precompile_headers(glfw_window_test PRIVATE
+    <GLFW/glfw3.h>
+    <iostream>
+    <string>
+)
 
 find_package(OpenGL REQUIRED)
 

@@ -1,0 +1,3 @@
+/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir
+/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/edit_cache.dir
+/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/rebuild_cache.dir
