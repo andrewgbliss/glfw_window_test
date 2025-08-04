@@ -1,46 +1,39 @@
-# Colorful Scene Configuration
-# This scene contains multiple triangles and rectangles in bright colors
+# Colorful Scene
+# A vibrant scene with multiple colored shapes
 
 SCENE Colorful Scene
 
-# Purple triangle on the left
-TRIANGLE
-NAME Triangle1
-POSITION -0.4, 0.2
-SCALE 0.3, 0.3
-COLOR 0.5, 0.0, 0.5
+# Red triangle
+Triangle
+NAME RedTriangle
+POSITION -0.7, 0.3
+SCALE 0.4, 0.4
+COLOR 1.0, 0.0, 0.0
 
-# Cyan triangle on the right
-TRIANGLE
-NAME Triangle2
-POSITION 0.4, -0.2
-SCALE 0.3, 0.3
-COLOR 0.0, 1.0, 1.0
+# Green rectangle
+Rectangle
+NAME GreenRectangle
+POSITION 0.7, 0.3
+SCALE 0.4, 0.4
+COLOR 0.0, 1.0, 0.0
 
-# Yellow rectangle in top-left
-RECTANGLE
-NAME Rectangle1
-POSITION -0.7, 0.4
-SCALE 0.2, 0.2
+# Blue triangle
+Triangle
+NAME BlueTriangle
+POSITION -0.7, -0.3
+SCALE 0.4, 0.4
+COLOR 0.0, 0.0, 1.0
+
+# Yellow rectangle
+Rectangle
+NAME YellowRectangle
+POSITION 0.7, -0.3
+SCALE 0.4, 0.4
 COLOR 1.0, 1.0, 0.0
 
-# Magenta rectangle in bottom-right
-RECTANGLE
-NAME Rectangle2
-POSITION 0.7, -0.4
-SCALE 0.2, 0.2
-COLOR 1.0, 0.0, 1.0
-
-# Lime rectangle at the top
-RECTANGLE
-NAME Rectangle3
-POSITION 0.0, 0.6
-SCALE 0.3, 0.2
-COLOR 0.5, 1.0, 0.0
-
-# Pink rectangle at the bottom
-RECTANGLE
-NAME Rectangle4
-POSITION 0.0, -0.6
-SCALE 0.3, 0.2
-COLOR 1.0, 0.75, 0.8 
+# Purple triangle in center
+Triangle
+NAME PurpleTriangle
+POSITION 0.0, 0.0
+SCALE 0.3, 0.3
+COLOR 1.0, 0.0, 1.0 

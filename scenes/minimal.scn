@@ -1,18 +1,11 @@
-# Minimal Scene Configuration
-# This scene contains just one triangle and one rectangle
+# Minimal Scene
+# A simple scene with just one shape
 
 SCENE Minimal Scene
 
-# Gold triangle in the center
-TRIANGLE
-NAME Triangle1
+# Single triangle
+Triangle
+NAME SimpleTriangle
 POSITION 0.0, 0.0
-SCALE 0.4, 0.4
-COLOR 1.0, 0.84, 0.0
-
-# White rectangle overlapping
-RECTANGLE
-NAME Rectangle1
-POSITION 0.0, 0.0
-SCALE 0.6, 0.6
-COLOR 1.0, 1.0, 1.0 
+SCALE 0.5, 0.5
+COLOR 0.5, 0.5, 0.5 

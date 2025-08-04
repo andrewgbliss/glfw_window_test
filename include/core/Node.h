@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Math.h"
-#include "Script.h"
 #include <vector>
 #include <memory>
 #include <string>
@@ -16,7 +15,6 @@ protected:
   std::string name;
   std::vector<std::unique_ptr<Node>> children;
   Node *parent;
-  std::unique_ptr<Script> script;
 
 public:
   Node(const std::string &nodeName = "Node")
@@ -38,12 +36,6 @@ public:
 
   const std::vector<std::unique_ptr<Node>> &getChildren() const { return children; }
   size_t getChildCount() const { return children.size(); }
-
-  // Script management (one script per node)
-  void setScript(std::unique_ptr<Script> newScript);
-  std::unique_ptr<Script> removeScript();
-  Script *getScript() const { return script.get(); }
-  bool hasScript() const { return script != nullptr; }
 
   // Virtual methods for rendering and updating
   virtual void render() const = 0;
@@ -141,43 +133,9 @@ inline std::unique_ptr<Node> Node::removeChild(Node *child)
   return nullptr;
 }
 
-inline void Node::setScript(std::unique_ptr<Script> newScript)
-{
-  // Remove existing script if any
-  if (script)
-  {
-    script->onDetach();
-  }
-
-  // Set new script
-  if (newScript)
-  {
-    newScript->onAttach(this);
-    script = std::move(newScript);
-  }
-  else
-  {
-    script.reset();
-  }
-}
-
-inline std::unique_ptr<Script> Node::removeScript()
-{
-  if (script)
-  {
-    script->onDetach();
-    return std::move(script);
-  }
-  return nullptr;
-}
-
 inline void Node::update(float deltaTime)
 {
-  // Update the attached script if any
-  if (script)
-  {
-    script->update(deltaTime);
-  }
+  // Base node update - can be overridden by derived classes
 }
 
 inline void Node::renderRecursive() const
@@ -194,7 +152,7 @@ inline void Node::renderRecursive() const
 
 inline void Node::updateRecursive(float deltaTime)
 {
-  // Update this node (and its script)
+  // Update this node
   update(deltaTime);
 
   // Update all children
@@ -206,12 +164,12 @@ inline void Node::updateRecursive(float deltaTime)
 
 inline void Node2D::update(float deltaTime)
 {
-  // Call base class update (handles script)
+  // Call base class update
   Node::update(deltaTime);
 }
 
 inline void Node3D::update(float deltaTime)
 {
-  // Call base class update (handles script)
+  // Call base class update
   Node::update(deltaTime);
 }

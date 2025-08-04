@@ -1,11 +1,10 @@
-#include "Window.h"
-#include "Triangle.h"
-#include "Rectangle.h"
-#include "Scene.h"
-#include "SceneLoader.h"
-#include "Node.h"
-#include "Script.h"
-#include "ScriptImpl.h"
+#include "core/Window.h"
+#include "entities/Triangle.h"
+#include "entities/Rectangle.h"
+#include "core/Scene.h"
+#include "core/SceneLoader.h"
+#include "core/Node.h"
+#include "scripts/Scripts.h"
 #include <GL/gl.h>
 #include <iostream>
 #include <vector>
@@ -37,27 +36,22 @@ int main(void)
   }
   std::cout << std::endl;
 
-  // Load the first scene from file
-  Scene currentScene = SceneLoader::loadSceneFromFile("scenes/default.scn");
+  // Load the inheritance demo scene from file
+  Scene currentScene = SceneLoader::loadSceneFromFile("scenes/inheritance_demo.scn");
   std::cout << "Loaded scene: " << currentScene.getName() << std::endl;
   std::cout << "Nodes in scene: " << currentScene.getNodeCount() << std::endl;
 
-  // Attach a rotation script to the triangle
+  // Display information about nodes in the scene
   auto rootNode = currentScene.getRoot();
-  if (rootNode && rootNode->getChildCount() > 0)
+  if (rootNode)
   {
-    // Find the triangle and attach a rotation script
-    for (auto &child : rootNode->getChildren())
+    std::cout << "Nodes loaded from scene file:" << std::endl;
+    for (const auto &child : rootNode->getChildren())
     {
-      if (child->getName() == "Triangle1")
-      {
-        auto rotateScript = std::make_unique<RotateScript>(180.0f); // 180 degrees per second
-        child->setScript(std::move(rotateScript));
-        std::cout << "Attached rotation script to Triangle1" << std::endl;
-        break;
-      }
+      std::cout << "  - " << child->getName() << " (" << typeid(*child).name() << ")" << std::endl;
     }
   }
+  std::cout << std::endl;
 
   // Timing variables
   auto lastTime = std::chrono::high_resolution_clock::now();

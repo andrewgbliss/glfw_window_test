@@ -1,14 +1,12 @@
 #pragma once
 
 #include "Scene.h"
-#include "Triangle.h"
-#include "Rectangle.h"
+#include "NodeTypeMap.h"
 #include "Math.h"
 #include <fstream>
 #include <sstream>
 #include <string>
 #include <memory>
-#include <map>
 #include <iostream>
 
 // Scene file parser and loader
@@ -17,12 +15,12 @@ class SceneLoader
 private:
   // Scene file format keywords
   static const std::string SCENE_KEYWORD;
-  static const std::string TRIANGLE_KEYWORD;
-  static const std::string RECTANGLE_KEYWORD;
   static const std::string POSITION_KEYWORD;
   static const std::string SCALE_KEYWORD;
   static const std::string COLOR_KEYWORD;
   static const std::string NAME_KEYWORD;
+  static const std::string SCRIPT_KEYWORD;
+  static const std::string SCRIPT_PARAMS_KEYWORD;
 
 public:
   // Load scene from file
@@ -36,7 +34,12 @@ public:
 
 private:
   // Parse individual object from file
-  static std::unique_ptr<Node> parseObject(std::ifstream &file, const std::string &objectType);
+  static std::unique_ptr<Node> parseObject(std::ifstream &file, const std::string &nodeType);
+
+  // Parse script from string
+  static std::unique_ptr<Node> parseScript(const std::string &scriptType, const std::string &params,
+                                           const std::string &name, const Position2D &position,
+                                           const Scale2D &scale, const Color &color);
 
   // Parse vector2 from string
   static Vector2 parseVector2(const std::string &str);
@@ -53,12 +56,12 @@ private:
 
 // Scene file format keywords
 inline const std::string SceneLoader::SCENE_KEYWORD = "SCENE";
-inline const std::string SceneLoader::TRIANGLE_KEYWORD = "TRIANGLE";
-inline const std::string SceneLoader::RECTANGLE_KEYWORD = "RECTANGLE";
 inline const std::string SceneLoader::POSITION_KEYWORD = "POSITION";
 inline const std::string SceneLoader::SCALE_KEYWORD = "SCALE";
 inline const std::string SceneLoader::COLOR_KEYWORD = "COLOR";
 inline const std::string SceneLoader::NAME_KEYWORD = "NAME";
+inline const std::string SceneLoader::SCRIPT_KEYWORD = "SCRIPT";
+inline const std::string SceneLoader::SCRIPT_PARAMS_KEYWORD = "SCRIPT_PARAMS";
 
 // Implementation of SceneLoader methods
 inline Scene SceneLoader::loadSceneFromFile(const std::string &filename)
@@ -96,24 +99,22 @@ inline Scene SceneLoader::loadSceneFromFile(const std::string &filename)
       continue;
     }
 
-    // Parse triangle
-    if (line.find(TRIANGLE_KEYWORD) == 0)
+    // Parse any node type dynamically
+    // Check if this line is a node type (not a keyword)
+    bool isNodeType = true;
+    if (line == SCENE_KEYWORD || line == POSITION_KEYWORD || line == SCALE_KEYWORD ||
+        line == COLOR_KEYWORD || line == NAME_KEYWORD || line == SCRIPT_KEYWORD ||
+        line == SCRIPT_PARAMS_KEYWORD)
     {
-      auto triangle = parseObject(file, TRIANGLE_KEYWORD);
-      if (triangle)
-      {
-        scene.addNode(std::move(triangle));
-      }
-      continue;
+      isNodeType = false;
     }
 
-    // Parse rectangle
-    if (line.find(RECTANGLE_KEYWORD) == 0)
+    if (isNodeType)
     {
-      auto rectangle = parseObject(file, RECTANGLE_KEYWORD);
-      if (rectangle)
+      auto node = parseObject(file, line);
+      if (node)
       {
-        scene.addNode(std::move(rectangle));
+        scene.addNode(std::move(node));
       }
       continue;
     }
@@ -152,15 +153,18 @@ inline std::vector<std::string> SceneLoader::getAvailableScenes(const std::strin
   scenes.push_back("scenes/default.scn");
   scenes.push_back("scenes/colorful.scn");
   scenes.push_back("scenes/minimal.scn");
+  scenes.push_back("scenes/inheritance_demo.scn");
   return scenes;
 }
 
-inline std::unique_ptr<Node> SceneLoader::parseObject(std::ifstream &file, const std::string &objectType)
+inline std::unique_ptr<Node> SceneLoader::parseObject(std::ifstream &file, const std::string &nodeType)
 {
   std::string name = "Default";
   Position2D position(0, 0);
   Scale2D scale(1, 1);
   Color color(1, 1, 1);
+  std::string scriptType = "";
+  std::string scriptParams = "";
 
   std::string line;
   while (std::getline(file, line))
@@ -220,18 +224,73 @@ inline std::unique_ptr<Node> SceneLoader::parseObject(std::ifstream &file, const
       }
       continue;
     }
+
+    // Parse script
+    if (line.find(SCRIPT_KEYWORD) == 0)
+    {
+      size_t pos = line.find(' ');
+      if (pos != std::string::npos)
+      {
+        scriptType = line.substr(pos + 1);
+
+        // Look for script parameters on the next line
+        std::streampos currentPos = file.tellg();
+        if (std::getline(file, line))
+        {
+          line = trim(line);
+          if (line.find(SCRIPT_PARAMS_KEYWORD) == 0)
+          {
+            size_t paramPos = line.find(' ');
+            if (paramPos != std::string::npos)
+            {
+              scriptParams = line.substr(paramPos + 1);
+            }
+          }
+          else
+          {
+            // If no parameters line, go back
+            file.seekg(currentPos);
+          }
+        }
+      }
+      continue;
+    }
   }
 
-  // Create the appropriate object
-  if (objectType == TRIANGLE_KEYWORD)
+  // If a script was specified, create the script-based node
+  if (!scriptType.empty())
   {
-    return std::make_unique<Triangle>(name, position, scale, color);
-  }
-  else if (objectType == RECTANGLE_KEYWORD)
-  {
-    return std::make_unique<Rectangle>(name, position, scale, color);
+    auto paramParts = split(scriptParams, ',');
+    return parseScript(scriptType, scriptParams, name, position, scale, color);
   }
 
+  // Look up the node type in the map
+  auto nodeFactory = NodeTypeMap::getNodeFactory(nodeType);
+  if (nodeFactory)
+  {
+    return nodeFactory(name, position, scale, color);
+  }
+
+  // If node type not found, return nullptr
+  std::cerr << "Warning: Unknown node type '" << nodeType << "'" << std::endl;
+  return nullptr;
+}
+
+inline std::unique_ptr<Node> SceneLoader::parseScript(const std::string &scriptType, const std::string &params,
+                                                      const std::string &name, const Position2D &position,
+                                                      const Scale2D &scale, const Color &color)
+{
+  auto paramParts = split(params, ',');
+
+  // Look up the script type in the map
+  auto scriptFactory = NodeTypeMap::getScriptFactory(scriptType);
+  if (scriptFactory)
+  {
+    return scriptFactory(name, position, scale, color, paramParts);
+  }
+
+  // If script type not found, return nullptr
+  std::cerr << "Warning: Unknown script type '" << scriptType << "'" << std::endl;
   return nullptr;
 }
 

@@ -1,13 +1,13 @@
 CMakeFiles/glfw_window_test.dir/src/main.cpp.o: \
  /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/src/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Window.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/core/Window.h \
  /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/external/glfw/include/GLFW/glfw3.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/string \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Triangle.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/entities/Triangle.h \
  /usr/include/GL/gl.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Node.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Math.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/core/Node.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/core/Math.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/allocator.h \
  /usr/include/c++/11/bits/stl_construct.h \
@@ -23,9 +23,8 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/vector.tcc \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Script.h \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -56,25 +55,12 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Rectangle.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/Scene.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/SceneLoader.h \
- /usr/include/c++/11/fstream /usr/include/c++/11/istream \
- /usr/include/c++/11/ostream /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_classes.h /usr/include/c++/11/cstdio \
- /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/ios /usr/include/c++/11/bits/fstream.tcc \
- /usr/include/c++/11/bits/cxxabi_forced.h /usr/include/c++/11/cerrno \
- /usr/include/errno.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h /usr/include/c++/11/new \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/ScriptImpl.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/entities/Rectangle.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/core/Scene.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/core/SceneLoader.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/core/NodeTypeMap.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/scripts/Scripts.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/scripts/RotatingTriangle.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -100,7 +86,35 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/chrono \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/scripts/OscillatingRectangle.h \
+ /mnt/d/Bliss\ Code/Code/andrewgbliss/glfw_window_test/include/scripts/PulsingTriangle.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/node_handle.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/functional \
+ /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/stl_algo.h /usr/include/c++/11/cstdlib \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_iterator_base_types.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/predefined_ops.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/fstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_classes.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/fstream.tcc \
+ /usr/include/c++/11/bits/cxxabi_forced.h /usr/include/c++/11/cerrno \
+ /usr/include/errno.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/cstdint \
  /usr/include/c++/11/ctime /usr/include/time.h \
  /usr/include/c++/11/bits/parse_numbers.h

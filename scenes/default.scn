@@ -1,32 +1,18 @@
-# Default Scene Configuration
-# This scene contains one triangle and three rectangles
+# Default Scene
+# A simple scene with basic shapes
 
 SCENE Default Scene
 
-# Triangle in the center
-TRIANGLE
+# Create a triangle
+Triangle
 NAME Triangle1
-POSITION 0.0, 0.0
-SCALE 1.0, 1.0
-COLOR 1.0, 0.5, 0.2
+POSITION -0.5, 0.5
+SCALE 0.3, 0.3
+COLOR 1.0, 0.0, 0.0
 
-# Red rectangle on the left
-RECTANGLE
+# Create a rectangle
+Rectangle
 NAME Rectangle1
-POSITION -0.6, -0.3
-SCALE 0.4, 0.3
-COLOR 0.8, 0.2, 0.6
-
-# Green rectangle on the right
-RECTANGLE
-NAME Rectangle2
-POSITION 0.2, 0.2
-SCALE 0.3, 0.4
-COLOR 0.2, 0.8, 0.4
-
-# Blue rectangle at the bottom
-RECTANGLE
-NAME Rectangle3
-POSITION 0.0, -0.5
-SCALE 0.5, 0.2
-COLOR 0.4, 0.2, 0.8 
+POSITION 0.5, -0.5
+SCALE 0.3, 0.3
+COLOR 0.0, 0.0, 1.0 
