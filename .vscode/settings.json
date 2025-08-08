@@ -3,6 +3,10 @@
     "iostream": "cpp",
     "ostream": "cpp",
     "type_traits": "cpp",
-    "xstring": "cpp"
+    "xstring": "cpp",
+    "memory": "cpp",
+    "string": "cpp",
+    "sstream": "cpp",
+    "vector": "cpp"
   }
 }

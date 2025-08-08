@@ -22,7 +22,10 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 include_directories(include)
 include_directories(${PROJECT_SOURCE_DIR}/external/glfw/include)
 
-add_executable(glfw_window_test src/main.cpp)
+# Automatically find all source files
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+
+add_executable(glfw_window_test ${SOURCES})
 
 # Enable precompiled headers for faster compilation
 target_precompile_headers(glfw_window_test PRIVATE

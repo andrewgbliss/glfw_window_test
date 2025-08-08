@@ -84,12 +84,92 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -S "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.cxx" -o CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.s
 
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: CMakeFiles/glfw_window_test.dir/flags.make
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: ../../src/Animation2D.cpp
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: CMakeFiles/glfw_window_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -MD -MT CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o -MF CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o.d -o CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o -c "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Animation2D.cpp"
+
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -E "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Animation2D.cpp" > CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.i
+
+CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -S "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Animation2D.cpp" -o CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.s
+
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: CMakeFiles/glfw_window_test.dir/flags.make
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: ../../src/Camera.cpp
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: CMakeFiles/glfw_window_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -MD -MT CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o -MF CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o.d -o CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o -c "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Camera.cpp"
+
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfw_window_test.dir/src/Camera.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -E "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Camera.cpp" > CMakeFiles/glfw_window_test.dir/src/Camera.cpp.i
+
+CMakeFiles/glfw_window_test.dir/src/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfw_window_test.dir/src/Camera.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -S "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Camera.cpp" -o CMakeFiles/glfw_window_test.dir/src/Camera.cpp.s
+
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o: CMakeFiles/glfw_window_test.dir/flags.make
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o: ../../src/GameSettings.cpp
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o: CMakeFiles/glfw_window_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -MD -MT CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o -MF CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o.d -o CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o -c "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/GameSettings.cpp"
+
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -E "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/GameSettings.cpp" > CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.i
+
+CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -S "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/GameSettings.cpp" -o CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.s
+
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: CMakeFiles/glfw_window_test.dir/flags.make
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: ../../src/Sprite2D.cpp
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: CMakeFiles/glfw_window_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -MD -MT CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o -MF CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o.d -o CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o -c "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Sprite2D.cpp"
+
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -E "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Sprite2D.cpp" > CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.i
+
+CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -S "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Sprite2D.cpp" -o CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.s
+
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o: CMakeFiles/glfw_window_test.dir/flags.make
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o: ../../src/YamlParser.cpp
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o: CMakeFiles/glfw_window_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -MD -MT CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o -MF CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o.d -o CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o -c "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/YamlParser.cpp"
+
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -E "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/YamlParser.cpp" > CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.i
+
+CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -S "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/YamlParser.cpp" -o CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.s
+
 CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/flags.make
 CMakeFiles/glfw_window_test.dir/src/main.cpp.o: ../../src/main.cpp
 CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
 CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
 CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/glfw_window_test.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/glfw_window_test.dir/src/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" -MD -MT CMakeFiles/glfw_window_test.dir/src/main.cpp.o -MF CMakeFiles/glfw_window_test.dir/src/main.cpp.o.d -o CMakeFiles/glfw_window_test.dir/src/main.cpp.o -c "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/main.cpp"
 
 CMakeFiles/glfw_window_test.dir/src/main.cpp.i: cmake_force
@@ -102,18 +182,28 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.s: cmake_force
 
 # Object files for target glfw_window_test
 glfw_window_test_OBJECTS = \
+"CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o" \
+"CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o" \
+"CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o" \
+"CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o" \
+"CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o" \
 "CMakeFiles/glfw_window_test.dir/src/main.cpp.o"
 
 # External object files for target glfw_window_test
 glfw_window_test_EXTERNAL_OBJECTS =
 
 glfw_window_test: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch
+glfw_window_test: CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o
+glfw_window_test: CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o
+glfw_window_test: CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o
+glfw_window_test: CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o
+glfw_window_test: CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o
 glfw_window_test: CMakeFiles/glfw_window_test.dir/src/main.cpp.o
 glfw_window_test: CMakeFiles/glfw_window_test.dir/build.make
 glfw_window_test: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 glfw_window_test: /usr/lib/x86_64-linux-gnu/libGL.so
 glfw_window_test: CMakeFiles/glfw_window_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable glfw_window_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable glfw_window_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw_window_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

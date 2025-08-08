@@ -3,6 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
+#include "GameSettings.h"
 
 // Window configuration structure
 struct WindowConfig
@@ -25,7 +26,7 @@ void errorCallback(int error, const char *description)
 }
 
 // Window creation function with better API
-GLFWwindow *createWindow(const WindowConfig &config = WindowConfig())
+GLFWwindow *createWindow(const WindowConfig &config = WindowConfig(), const GameSettings *settings = nullptr)
 {
   // Set error callback
   glfwSetErrorCallback(errorCallback);
@@ -75,8 +76,51 @@ GLFWwindow *createWindow(const WindowConfig &config = WindowConfig())
   // Make the window's context current
   glfwMakeContextCurrent(window);
 
-  // Set vsync
-  glfwSwapInterval(1);
+  // Set up viewport
+  int width, height;
+  glfwGetFramebufferSize(window, &width, &height);
+  glViewport(0, 0, width, height);
+
+  // Enable alpha blending if settings allow
+  if (!settings || settings->graphics.enableBlending)
+  {
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+  }
+
+  // Set up orthographic projection using viewport dimensions from settings
+  float viewportWidth = settings ? static_cast<float>(settings->graphics.viewportWidth) : static_cast<float>(width);
+  float viewportHeight = settings ? static_cast<float>(settings->graphics.viewportHeight) : static_cast<float>(height);
+
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  glOrtho(0.0f, viewportWidth, viewportHeight, 0.0f, -1.0f, 1.0f);
+  glMatrixMode(GL_MODELVIEW);
+  glLoadIdentity();
+
+  // Store settings pointer for resize callback
+  if (settings)
+  {
+    glfwSetWindowUserPointer(window, const_cast<GameSettings *>(settings));
+  }
+
+  // Set up resize callback
+  glfwSetFramebufferSizeCallback(window, [](GLFWwindow *win, int width, int height)
+                                 {
+    glViewport(0, 0, width, height);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    
+    // Get settings from user pointer
+    GameSettings* settings = static_cast<GameSettings*>(glfwGetWindowUserPointer(win));
+    float viewportWidth = settings ? static_cast<float>(settings->graphics.viewportWidth) : static_cast<float>(width);
+    float viewportHeight = settings ? static_cast<float>(settings->graphics.viewportHeight) : static_cast<float>(height);
+    
+    glOrtho(0.0f, viewportWidth, viewportHeight, 0.0f, -1.0f, 1.0f);
+    glMatrixMode(GL_MODELVIEW); });
+
+  // Set vsync based on settings
+  glfwSwapInterval((!settings || settings->window.vsync) ? 1 : 0);
 
   return window;
 }
@@ -89,9 +133,9 @@ private:
   bool m_initialized;
 
 public:
-  Window(const WindowConfig &config = WindowConfig()) : m_window(nullptr), m_initialized(false)
+  Window(const WindowConfig &config = WindowConfig(), const GameSettings *settings = nullptr) : m_window(nullptr), m_initialized(false)
   {
-    m_window = createWindow(config);
+    m_window = createWindow(config, settings);
     m_initialized = (m_window != nullptr);
   }
 
@@ -160,5 +204,11 @@ public:
   void hide()
   {
     glfwHideWindow(m_window);
+  }
+
+  // Check if a key is pressed
+  bool isKeyPressed(int key) const
+  {
+    return glfwGetKey(m_window, key) == GLFW_PRESS;
   }
 };
