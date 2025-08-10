@@ -187,69 +187,63 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch: CMakeFiles/glfw_window_test.d
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc
 
-CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
-  ../../src/Animation2D.cpp \
+CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
+  ../../src/main.cpp \
   /usr/include/stdc-predef.h \
-  ../../include/nodes/Animation2D.h \
+  ../../include/core/GameSetup.h \
+  ../../include/core/GameSettings.h \
   /usr/include/c++/11/string \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/iostream \
+  ../../include/core/window/OpenGLWindow.h \
+  ../../include/core/window/Window.h \
+  ../../external/glfw/include/GLFW/glfw3.h \
+  ../../include/core/render/RenderDevice.h \
+  ../../include/core/render/RenderDriver.h \
+  /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/allocator.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/memory \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/exception \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
@@ -257,92 +251,36 @@ CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o: CMakeFiles/glfw_window_te
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/iostream
-
-CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
-  ../../src/Camera.cpp \
-  /usr/include/stdc-predef.h \
+  ../../include/core/render/OpenGLRenderDriver.h \
+  /usr/include/GL/gl.h \
   ../../include/core/Camera.h \
   ../../include/core/Math.h \
   /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../../include/core/GameSettings.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/GL/gl.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/new \
   /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/cmath \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
@@ -371,199 +309,42 @@ CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o: CMakeFiles/glfw_window_test.di
   /usr/include/c++/11/tr1/modified_bessel_func.tcc \
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc
-
-CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
-  ../../src/GameSettings.cpp \
-  /usr/include/stdc-predef.h \
-  ../../include/core/GameSettings.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_iterator_base_types.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h
-
-CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
-  ../../src/Sprite2D.cpp \
-  /usr/include/stdc-predef.h \
-  ../../include/nodes/Sprite2D.h \
-  ../../include/nodes/Node2D.h \
-  ../../include/core/Math.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  ../../include/core/Input.h \
+  ../../include/scene/Scene.h \
   ../../include/nodes/Node.h \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/c++/11/bit \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/exception \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/string \
-  ../../include/core/GameSettings.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
+  ../../include/scene/MinimalScene.h \
+  ../../include/nodes/Rectangle.h \
+  ../../include/nodes/Node2D.h \
+  ../../include/scene/SimpleScene.h \
+  ../../include/scene/ColorfulScene.h \
+  ../../include/nodes/Sprite2D.h \
   ../../include/nodes/Animation2D.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glu.h \
-  ../../external/glfw/include/GLFW/glfw3.h \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/strings.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
   ../../external/stb/stb_image.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/include/c++/11/cstdlib \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -577,274 +358,15 @@ CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o: CMakeFiles/glfw_window_test.
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/math.h \
-  /usr/include/c++/11/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/11/bits/std_abs.h \
-  /usr/include/c++/11/bits/specfun.h \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/tr1/gamma.tcc \
-  /usr/include/c++/11/tr1/special_function_util.h \
-  /usr/include/c++/11/tr1/bessel_function.tcc \
-  /usr/include/c++/11/tr1/beta_function.tcc \
-  /usr/include/c++/11/tr1/ell_integral.tcc \
-  /usr/include/c++/11/tr1/exp_integral.tcc \
-  /usr/include/c++/11/tr1/hypergeometric.tcc \
-  /usr/include/c++/11/tr1/legendre_function.tcc \
-  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/11/tr1/poly_hermite.tcc \
-  /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/assert.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
-
-CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
-  ../../src/YamlParser.cpp \
-  /usr/include/stdc-predef.h \
-  ../../include/scene/YamlParser.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_iterator_base_types.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/pstl/execution_defs.h
-
-CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx \
-  ../../src/main.cpp \
-  /usr/include/stdc-predef.h \
-  ../../include/core/Window.h \
-  ../../external/glfw/include/GLFW/glfw3.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/string \
-  ../../include/core/GameSettings.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/type_traits \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/move.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/debug/assertions.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  ../../include/core/Camera.h \
-  ../../include/core/Math.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/11/bits/concept_check.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/GL/gl.h \
-  ../../include/scene/Scene.h \
-  ../../include/nodes/Node.h \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  ../../include/scene/SceneLoader.h \
-  ../../include/scene/YamlParser.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  ../../include/nodes/NodeTypeMap.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
   ../../include/nodes/Triangle.h \
-  ../../include/nodes/Node2D.h \
-  ../../include/nodes/Rectangle.h \
-  ../../include/nodes/RotatingTriangle.h \
-  /usr/include/c++/11/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/11/bits/std_abs.h \
-  /usr/include/c++/11/bits/specfun.h \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/tr1/gamma.tcc \
-  /usr/include/c++/11/tr1/special_function_util.h \
-  /usr/include/c++/11/tr1/bessel_function.tcc \
-  /usr/include/c++/11/tr1/beta_function.tcc \
-  /usr/include/c++/11/tr1/ell_integral.tcc \
-  /usr/include/c++/11/tr1/exp_integral.tcc \
-  /usr/include/c++/11/tr1/hypergeometric.tcc \
-  /usr/include/c++/11/tr1/legendre_function.tcc \
-  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/11/tr1/poly_hermite.tcc \
-  /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  ../../include/nodes/OscillatingRectangle.h \
-  ../../include/nodes/PulsingTriangle.h \
-  ../../include/nodes/Sprite2D.h \
-  ../../include/nodes/Animation2D.h \
-  /usr/include/GL/glu.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_iterator_base_types.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
+  ../../include/scene/AliensDemoScene.h \
+  ../../include/scene/TestScene.h \
+  ../../include/core/GameLoop.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/cstdint \
@@ -859,21 +381,11 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 
 /usr/include/c++/11/ratio:
 
-../../include/nodes/OscillatingRectangle.h:
-
-../../include/nodes/Rectangle.h:
-
 ../../include/nodes/Triangle.h:
-
-../../include/scene/Scene.h:
-
-../../src/YamlParser.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
-
-/usr/include/assert.h:
 
 /usr/include/c++/11/math.h:
 
@@ -881,27 +393,49 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-../../include/scene/YamlParser.h:
-
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
+
 /usr/include/strings.h:
 
-/usr/include/GL/glu.h:
+/usr/include/c++/11/bits/stl_multimap.h:
 
-../../include/nodes/Node.h:
+/usr/include/c++/11/bits/stl_map.h:
 
-../../include/nodes/Node2D.h:
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/map:
+
+/usr/include/c++/11/stdlib.h:
+
+../../include/nodes/Animation2D.h:
 
 ../../include/nodes/Sprite2D.h:
 
-../../src/Sprite2D.cpp:
+../../include/scene/ColorfulScene.h:
 
-../../src/GameSettings.cpp:
+../../include/nodes/Node2D.h:
+
+../../include/nodes/Rectangle.h:
+
+../../include/scene/MinimalScene.h:
+
+../../include/nodes/Node.h:
+
+../../include/scene/Scene.h:
+
+../../include/core/Input.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -909,17 +443,11 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /usr/include/c++/11/tr1/exp_integral.tcc:
-
-/usr/include/c++/11/tr1/ell_integral.tcc:
-
-/usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/c++/11/limits:
-
-/usr/include/c++/11/bits/specfun.h:
 
 /usr/include/c++/11/backward/binders.h:
 
@@ -928,8 +456,6 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 /usr/include/c++/11/algorithm:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
@@ -949,6 +475,8 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+../../include/core/render/RenderDriver.h:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -965,13 +493,13 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
+../../include/scene/TestScene.h:
+
 /usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -1005,8 +533,6 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
-/usr/include/c++/11/bits/sstream.tcc:
-
 /usr/include/c++/11/new:
 
 /usr/include/ctype.h:
@@ -1014,6 +540,8 @@ CMakeFiles/glfw_window_test.dir/src/main.cpp.o: CMakeFiles/glfw_window_test.dir/
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+../../include/scene/AliensDemoScene.h:
 
 /usr/include/GL/glext.h:
 
@@ -1057,8 +585,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.cxx:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-../../include/nodes/RotatingTriangle.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -1071,6 +597,8 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.cxx:
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
+../../include/core/window/OpenGLWindow.h:
+
 /usr/include/c++/11/cctype:
 
 /usr/include/c++/11/unordered_map:
@@ -1078,6 +606,8 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.cxx:
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
+
+../../include/core/GameLoop.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
@@ -1101,12 +631,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-../../external/stb/stb_image.h:
-
-/usr/include/c++/11/tr1/bessel_function.tcc:
-
-../../external/glfw/include/GLFW/glfw3.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
@@ -1119,15 +643,13 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+../../include/core/window/Window.h:
 
-../../include/nodes/PulsingTriangle.h:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/11/type_traits:
-
-/usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/c++/11/tuple:
 
@@ -1145,8 +667,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/features.h:
 
-/usr/include/c++/11/bits/stl_multimap.h:
-
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/stl_function.h:
@@ -1156,8 +676,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/c++/11/chrono:
-
-../../include/nodes/NodeTypeMap.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -1191,11 +709,15 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
+/usr/include/c++/11/tr1/special_function_util.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/11/debug/assertions.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+../../include/scene/SimpleScene.h:
 
 /usr/include/c++/11/exception:
 
@@ -1204,6 +726,10 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 /usr/include/c++/11/initializer_list:
 
 /usr/include/c++/11/iosfwd:
+
+/usr/include/assert.h:
+
+../../include/core/render/OpenGLRenderDriver.h:
 
 /usr/include/GL/gl.h:
 
@@ -1225,8 +751,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/c++/11/bits/range_access.h:
 
-/usr/include/c++/11/map:
-
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
@@ -1236,8 +760,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 /usr/include/c++/11/bits/exception_ptr.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
-
-../../include/scene/SceneLoader.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
@@ -1301,6 +823,8 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/asm-generic/errno.h:
 
+/usr/include/c++/11/tr1/ell_integral.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -1339,6 +863,12 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
+../../external/stb/stb_image.h:
+
+../../external/glfw/include/GLFW/glfw3.h:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
+
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
@@ -1361,43 +891,37 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-../../src/Animation2D.cpp:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/11/stdlib.h:
+../../include/core/GameSetup.h:
 
-../../include/nodes/Animation2D.h:
+/usr/include/c++/11/memory:
 
-../../include/core/Window.h:
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/c++/11/bits/stl_map.h:
+/usr/include/c++/11/backward/auto_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+../../include/core/Math.h:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
-/usr/include/c++/11/tr1/beta_function.tcc:
+/usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/c++/11/array:
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
 
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/vector:
-
-/usr/include/c++/11/bits/align.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/backward/auto_ptr.h:
+../../include/core/Camera.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -1406,42 +930,6 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/memory:
-
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
-
-../../include/core/Math.h:
-
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-../../src/Camera.cpp:
-
-../../include/core/Camera.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/c++/11/sstream:
 
 /usr/include/c++/11/bits/stl_algo.h:
 
@@ -1455,11 +943,29 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 
 /usr/include/c++/11/bits/stl_heap.h:
 
-../../src/main.cpp:
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/c++/11/cstring:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+../../src/main.cpp:
 
 /usr/include/math.h:
 
@@ -1478,3 +984,15 @@ CMakeFiles/glfw_window_test.dir/cmake_pch.hxx:
 /usr/include/c++/11/bits/postypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/c++/11/limits:
+
+../../include/core/render/RenderDevice.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/tr1/beta_function.tcc:

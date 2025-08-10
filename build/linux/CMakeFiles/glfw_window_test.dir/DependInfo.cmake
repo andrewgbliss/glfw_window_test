@@ -10,16 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.cxx" "CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch" "gcc" "CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch.d"
   "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch" "gcc" "CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Animation2D.cpp" "CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Camera.cpp" "CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/GameSettings.cpp" "CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/Sprite2D.cpp" "CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/YamlParser.cpp" "CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o.d"
-  "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o.d"
   "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/src/main.cpp" "CMakeFiles/glfw_window_test.dir/src/main.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/main.cpp.o.d"
   "/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx" "CMakeFiles/glfw_window_test.dir/src/main.cpp.o" "gcc" "CMakeFiles/glfw_window_test.dir/src/main.cpp.o.d"
   )

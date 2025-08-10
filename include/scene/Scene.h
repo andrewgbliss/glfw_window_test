@@ -15,6 +15,27 @@ public:
   Scene(const std::string &sceneName = "Default Scene")
       : name(sceneName), rootNode(std::make_unique<RootNode>("Root")) {}
 
+  virtual ~Scene() = default;
+
+  // Move constructor
+  Scene(Scene &&other) noexcept
+      : name(std::move(other.name)), rootNode(std::move(other.rootNode)) {}
+
+  // Move assignment operator
+  Scene &operator=(Scene &&other) noexcept
+  {
+    if (this != &other)
+    {
+      name = std::move(other.name);
+      rootNode = std::move(other.rootNode);
+    }
+    return *this;
+  }
+
+  // Delete copy constructor and assignment operator
+  Scene(const Scene &) = delete;
+  Scene &operator=(const Scene &) = delete;
+
   // Add nodes to the scene
   void addNode(std::unique_ptr<Node> node);
 
@@ -36,7 +57,10 @@ public:
   void render() const;
 
   // Update all nodes in the scene
-  void update(float deltaTime = 0.0f);
+  virtual void update(float deltaTime = 0.0f);
+
+  // Handle scene-specific input (can be overridden by derived scenes)
+  virtual void handleInput();
 
   // Create predefined scenes
   static Scene createDefaultScene();
@@ -74,4 +98,10 @@ inline void Scene::render() const
 inline void Scene::update(float deltaTime)
 {
   rootNode->updateRecursive(deltaTime);
+}
+
+inline void Scene::handleInput()
+{
+  // Base scene input handling - can be overridden by derived scenes
+  // This is where scene-specific input logic would go
 }

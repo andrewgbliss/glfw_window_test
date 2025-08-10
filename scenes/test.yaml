@@ -1,9 +1,0 @@
-scene:
-  name: "TestScene"
-
-nodes:
-  - type: "Rectangle"
-    name: "TestRect"
-    position: [0.0, 0.0]
-    scale: [1.0, 1.0]
-    color: [1.0, 0.0, 0.0]

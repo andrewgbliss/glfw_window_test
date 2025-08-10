@@ -10,15 +10,5 @@ CXX_FLAGS = -g -O0 -g
 
 # PCH options: CMakeFiles/glfw_window_test.dir/cmake_pch.hxx.gch_OPTIONS = -Winvalid-pch;-x;c++-header;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
 
-# PCH options: CMakeFiles/glfw_window_test.dir/src/Animation2D.cpp.o_OPTIONS = -Winvalid-pch;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
-
-# PCH options: CMakeFiles/glfw_window_test.dir/src/Camera.cpp.o_OPTIONS = -Winvalid-pch;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
-
-# PCH options: CMakeFiles/glfw_window_test.dir/src/GameSettings.cpp.o_OPTIONS = -Winvalid-pch;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
-
-# PCH options: CMakeFiles/glfw_window_test.dir/src/Sprite2D.cpp.o_OPTIONS = -Winvalid-pch;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
-
-# PCH options: CMakeFiles/glfw_window_test.dir/src/YamlParser.cpp.o_OPTIONS = -Winvalid-pch;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
-
 # PCH options: CMakeFiles/glfw_window_test.dir/src/main.cpp.o_OPTIONS = -Winvalid-pch;-include;/mnt/d/Bliss Code/Code/andrewgbliss/glfw_window_test/build/linux/CMakeFiles/glfw_window_test.dir/cmake_pch.hxx
 

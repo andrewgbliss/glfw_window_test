@@ -38,9 +38,13 @@ public:
   virtual void render() const = 0;
   virtual void update(float deltaTime = 0.0f);
 
+  // Virtual method for input handling
+  virtual void handleInput();
+
   // Scene graph traversal
   virtual void renderRecursive() const;
   virtual void updateRecursive(float deltaTime = 0.0f);
+  virtual void handleInputRecursive();
 };
 
 // Concrete Root Node class that can be instantiated
@@ -85,6 +89,11 @@ inline void Node::update(float deltaTime)
   // Base node update - can be overridden by derived classes
 }
 
+inline void Node::handleInput()
+{
+  // Base node input handling - can be overridden by derived classes
+}
+
 inline void Node::renderRecursive() const
 {
   // Render this node
@@ -106,5 +115,17 @@ inline void Node::updateRecursive(float deltaTime)
   for (auto &child : children)
   {
     child->updateRecursive(deltaTime);
+  }
+}
+
+inline void Node::handleInputRecursive()
+{
+  // Handle input for this node
+  handleInput();
+
+  // Handle input for all children
+  for (auto &child : children)
+  {
+    child->handleInputRecursive();
   }
 }
